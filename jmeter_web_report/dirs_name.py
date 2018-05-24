@@ -3,6 +3,7 @@
 """
 
 import os
+import time
 
 """ 扫描的目录 """
 PATH = '/Users/mark/Downloads'
@@ -27,6 +28,8 @@ def dirs_name():
             if dir_depth == root_depth + LEVEL:
                 d[name] = {}
                 d[name]['name'] = name
+                
+                d[name]['time'] = time.strftime("%Y-%m-%d %H:%M:%S", (time.localtime(os.path.getmtime(dir_path))))
             
     return d
 

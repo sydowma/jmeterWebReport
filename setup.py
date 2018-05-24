@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="jmeterWebReport",
-    version="0.0.2",
+    version="0.0.3",
     author="mark",
     author_email="mamian521@gmail.com",
     license="Apache License",
@@ -17,7 +17,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     classifiers=(
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: Apache License",
         "Operating System :: OS Independent",
     ),
 )

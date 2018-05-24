@@ -9,7 +9,7 @@
     <div>
         <ul>
         {% for name, value in dirs_name.items() %}
-            <li><a href="http://jmeter.example.com/{{ name }}">{{ name }}</a></li>
+            <li><a href="http://jmeter.example.com/{{ name }}">{{ name }} </a>   {{ value.time }}  </li>
         {% endfor %}
         </ul>
     </div>
